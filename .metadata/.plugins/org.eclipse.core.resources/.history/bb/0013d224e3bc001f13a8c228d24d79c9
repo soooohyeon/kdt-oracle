@@ -1,0 +1,10 @@
+-- 2. DDL
+
+CREATE TABLE TBL_USER (	-- TBL을 같이 작성해서 테이블이라는 것을 명시해줌
+	USER_NAME VARCHAR2(100),	-- 앞에 테이블명 같이 작성해서 테이블 구분을 위해 명시해줌
+	USER_AGE NUMBER
+);
+
+SELECT * FROM TBL_USER;
+
+-- 테이블명 수정
