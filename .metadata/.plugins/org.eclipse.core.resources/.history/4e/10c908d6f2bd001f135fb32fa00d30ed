@@ -78,21 +78,18 @@ ORDER BY AVG(height);
  * 칼럼명은 입단연도, 평균 몸무게, 평균 키 로 표시한다.
  * 입단연도를 오름차순으로 정렬한다.
  * 단, 평균 몸무게는 70 이상 그리고 평균 키는 160 이상인 입단연도만 조회 */
---SELECT join_yyyy, AVG(weight)"평균 몸무게", AVG(height) "평균 키"
---FROM player p2
-----WHERE 70 <= (SELECT AVG(weight) FROM)
---GROUP BY join_yyyy
---ORDER BY join_yyyy;
---
---SELECT join_yyyy, AVG(weight)"평균 몸무게", AVG(height) "평균 키"
---	(SELECT AVG(weight) "평균 몸무게", AVG(height) "평균 키"
---	FROM player p2
---	GROUP BY join_yyyy)
---FROM player
---
---SELECT join_yyyy, AVG(weight) "평균 몸무게", AVG(height) "평균 키"
---FROM player
---GROUP BY join_yyyy;
+SELECT join_yyyy, p."평균 몸무게", p."평균 키"
+FROM player p1
+	JOIN (
+		SELECT join_yyyy, AVG(weight) "평균 몸무게", AVG(height) "평균 키"
+		FROM player p2
+		GROUP BY join_yyyy) p
+	ON p1.join_yyyy = p.join_yyyy
+WHERE p."평균 몸무게" >= 70 AND p."평균 키" >= 160;
+
+SELECT join_yyyy, AVG(weight) "평균 몸무게", AVG(height) "평균 키"
+FROM player
+GROUP BY join_yyyy;
 
 /* PLAYER 테이블에서 TEAM_ID가 'K01'인 선수 중 POSITION이
  * 'GK'인 선수를 조회하기 SUB쿼리 사용하기 */

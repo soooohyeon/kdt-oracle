@@ -36,6 +36,13 @@
 				<item key="panelsVisible" value="false"/>
 				<item key="verticalLayout" value="false"/>
 			</section>
+			<section name="plaintext">
+				<item key="enabledPanelIds" value="value-view"/>
+				<item key="activePanelId" value="value-view"/>
+				<item key="panelRatio" value="300"/>
+				<item key="panelsVisible" value="true"/>
+				<item key="verticalLayout" value="false"/>
+			</section>
 		</section>
 	</section>
 	<section name="DBeaver.ShowTipOfTheDayDialog">
@@ -51,6 +58,20 @@
 		<item key="DIALOG_Y_ORIGIN" value="394"/>
 		<item key="DIALOG_WIDTH" value="382"/>
 		<item key="DIALOG_HEIGHT" value="194"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="DBeaver.SQLTargetFormatDialog">
+		<item key="DIALOG_X_ORIGIN" value="370"/>
+		<item key="DIALOG_Y_ORIGIN" value="248"/>
+		<item key="DIALOG_WIDTH" value="380"/>
+		<item key="DIALOG_HEIGHT" value="413"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="DBeaver.FilterValueEditMenu">
+		<item key="DIALOG_X_ORIGIN" value="325"/>
+		<item key="DIALOG_Y_ORIGIN" value="623"/>
+		<item key="DIALOG_WIDTH" value="438"/>
+		<item key="DIALOG_HEIGHT" value="417"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>
