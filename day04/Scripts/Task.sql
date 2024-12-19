@@ -1,0 +1,11 @@
+-- [실습] 평균 급여보다 낮은 사람들의 급여를 20% 인상한 결과 테이블을 조회
+SELECT AVG(SALARY) FROM EMPLOYEES;	-- 6,461.831775
+
+SELECT EMPLOYEE_ID "직원 번호", FIRST_NAME 이름, SALARY "기본 급여", SALARY * 1.2	"20% 인상"
+FROM EMPLOYEES
+WHERE SALARY < (SELECT AVG(SALARY) FROM EMPLOYEES);
+
+
+
+
+
