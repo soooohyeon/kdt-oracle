@@ -1,0 +1,30 @@
+
+-- 해당 계정에 부여된 권한 확인
+SELECT * FROM user_tab_privs_recd;
+
+SELECT * FROM hr.EMPLOYEES;
+
+CREATE TABLE TBL_MEMBER(
+	MEM_ID NUMBER PRIMARY KEY,
+	MEM_NAME VARCHAR2(100)
+);
+-- SQL Error [1031] [42000]: ORA-01031: insufficient privileges
+-- ↑↑ 계정 권한 부족에 대한 오류
+
+-- 세션 권한 생성
+GRANT CREATE SESSION TO 계정명;
+
+-- 테이블/뷰/시퀀스/사용자 생성 권한
+GRANT CREATE TABLE TO 계정명;
+GRANT CREATE VIEW TO 계정명;
+GRANT CREATE USER TO 계정명;
+GRANT CREATE SEQUENCE TO 계정명;
+
+-- 특정 권한만 부여
+GRANT SELECT ON HR.EMPLOYEES TO 계정명
+GRANT INSERT ON HR.EMPLOYEES TO 계정명
+GRANT DELETE ON HR.EMPLOYEES TO 계정명
+GRANT UPDATE ON HR.EMPLOYEES TO 계정명
+GRANT UPDATE, INSERT, DELETE ON employees TO test;
+
+-- 권한 
