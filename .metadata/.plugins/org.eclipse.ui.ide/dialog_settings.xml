@@ -3,8 +3,8 @@
 	<list key="installedFeatures">
 	</list>
 	<section name="ChooseWorkspaceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="429"/>
-		<item key="DIALOG_Y_ORIGIN" value="218"/>
+		<item key="DIALOG_X_ORIGIN" value="-199"/>
+		<item key="DIALOG_Y_ORIGIN" value="272"/>
 	</section>
 	<section name="BasicNewProjectResourceWizard">
 		<section name="ProjectCreateWizard.dialogBounds">
