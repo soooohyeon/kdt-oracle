@@ -1,1 +1,1 @@
-{"resources":{"Scripts/JDBC01.sql":{"default-datasource":"oracle_thin-1942b0655bc-39164e7526dc259f","default-schema":"TEST"}}}
+{"resources":{"Scripts/JDBC01.sql":{"default-schema":"TEST","default-datasource":"oracle_thin-1942b0655bc-39164e7526dc259f"}}}

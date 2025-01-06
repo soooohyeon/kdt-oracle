@@ -1,0 +1,16 @@
+DROP TABLE tbl_user;
+
+CREATE TABLE tbl_user (
+   user_number NUMBER,
+   user_id VARCHAR2(100) NOT NULL,
+   user_pw VARCHAR2(100) NOT NULL,
+   user_name VARCHAR2(100) NOT NULL,
+   user_phone VARCHAR2(100) UNIQUE NOT NULL,
+   CONSTRAINT pk_user PRIMARY KEY(user_number)
+);
+
+BOOK 테이블
+   book_number 정수 PK
+   book_title 문자열 NN
+   book_author 문자열 NN
+   book_rent 문자열(true, false) DEFAULT false NN
